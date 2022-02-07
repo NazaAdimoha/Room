@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto:ital,wght@1,300&family=Spartan:wght@500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Spartan", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  width: 375px;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* max-width: 900px; */
+  position: relative;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slider-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.desktop-image {
+  display: none;
+}
+
+/* .slider-image img {
+  height: 100%;
+  width: 360px;
+} */
+
+.prev-btn,
+.next-btn {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  background-color: black;
+  background-position: center;
+  background-size: auto;
+}
+
+.prev-btn,
+.next-btn:hover {
+  background-color: black;
+}
+
+.prev-btn:hover {
+  background-color: black;
+}
+
+.button {
+  position: absolute;
+  left: 88.5%;
+  transform: translate(-50%);
+  top: 315px;
+  width: 90px;
+  height: 45px;
+  background-color: hsl(0, 0%, 0%);
+  overflow: hidden;
+  /* border-radius: 50px; */
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.slider-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+h3 {
+  align-items: center;
+  font-weight: 800;
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+}
+
+p {
+  align-items: flex-start;
+  justify-content: start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1rem;
+  font-family: "Spartan", sans-serif;
+}
+
+@media (min-width: 1440px) {
+  body {
+    min-width: 1440px;
+  }
+
+  .slides {
+    flex-direction: row;
+    /* text-align: left; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 40px;
+    /* background-color: black; */
+  }
+
+  .button {
+    position: absolute;
+    left: 63.99%;
+    transform: translate(-50%);
+    top: 470px;
+    width: 90px;
+    height: 60px;
+    background-color: hsl(0, 0%, 0%);
+    overflow: hidden;
+    /* border-radius: 50px; */
+  }
+
+  .slider-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+    align-items: flex-start;
+    margin-left: 40px;
+  }
+
+  h3 {
+    text-align: left;
+    font-weight: 800;
+    font-size: 30px;
+    font-family: "Spartan", sans-serif;
+    margin-bottom: 16px;
+  }
+
+  p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1rem;
+    font-family: "Spartan", sans-serif;
+  }
+
+  .shop .arrow {
+    font-weight: 600px;
+    font-size: 20px;
+    line-height: 1rem;
+    font-family: "Spartan", sans-serif;
+  }
+
+  .arrow {
+    margin-left: 10px;
+  }
+
+  .slider-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: flex;
+  }
+
+  /* .slider-image img {
+    width: 400px;
+  } */
+
+  /* .button {
+    top: 200px;
+    transform: translate(-50);
+    right: calc(100% - 100px);
+  } */
+
+  .bottom-page {
+    display: flex;
+    padding: 15px;
+  }
+
+  h4 {
+    font-weight: 800;
+    font-size: 12px;
+    font-family: "Spartan", sans-serif;
+  }
+
+  .about,
+  p {
+    font-size: 12px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 400;
+  }
+}
+
+/* .slides-2,
+.slides-3 {
+  display: none;
+} */
+
+.about {
+  padding: 20px;
+}
+
+.about-caption {
+  font-weight: 800;
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+}
